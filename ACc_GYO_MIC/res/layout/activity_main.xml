@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:hint="Bluetooth4.0-Android4.3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/tb_on_off"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textOff="Bluetooth-off"
+            android:textOn="Bluetooth-on" />
+
+        <Button
+            android:id="@+id/btn_searchDev"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Search-device" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+       >
+
+        <Button
+            android:id="@+id/btn_connection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect All" />
+
+     
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:hint="Bluetooth-Device-List" />
+    
+
+    <ListView
+        android:id="@+id/lv_bleList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+   
+
+     </LinearLayout>
+
+</LinearLayout>
